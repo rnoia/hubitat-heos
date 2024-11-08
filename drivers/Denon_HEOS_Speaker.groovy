@@ -17,6 +17,8 @@ metadata {
 		attribute "album", "STRING"
 		attribute "track", "STRING"
 		attribute "albumArt", "STRING"
+		attribute "station", "STRING"	// will be populated by sources like SiriusXM to identify what channel is being listened to
+	    
     }
 }
 
