@@ -255,6 +255,7 @@ def distributeMessage(command, payload) {
 			device.sendEvent(name: "artist", value: "${payload.artist}")
 			device.sendEvent(name: "album", value: "${payload.album}")
 			device.sendEvent(name: "track", value: "${payload.song}")
+			device.sendEvent(name: "station", value: "${payload.strtion}")
 			device.sendEvent(name: "trackData", value: groovy.json.JsonOutput.toJson(payload))
 			device.sendEvent(name: "albumArt", value: "<img src='${payload.image_url}' width=${albumArtWidth ?: 100} height=${albumArtHeight ?: 100}>")
 		}
